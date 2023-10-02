@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Letter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('background.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #e74c3c;
+            font-size: 32px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        /* Unique feature: Love Letter */
+        .love-letter {
+            display: none;
+            background-color: #f7dc6f; /* Yellow background for the letter */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            animation: openLetter 1s ease forwards; /* CSS animation for opening the letter */
+        }
+        .show-love-letter button {
+            display: block;
+            margin: 20px auto;
+        }
+        /* CSS animation keyframes for opening the letter */
+        @keyframes openLetter {
+            from {
+                transform: scaleY(0);
+            }
+            to {
+                transform: scaleY(1);
+            }
+        }
+        /* Improved Love Letter Styles */
+        .love-letter p {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        .love-letter .heartbeat {
+            font-size: 24px;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm So Sorry...</h1>
+        <p>My Dearest Avi,</p>
+        <p>I can't express how deeply regretful I am for what happened. I want you to know that I'm truly sorry and I promise it will never happen again. You mean the world to me, and I'll do anything to make it right.</p>
+        <p>You are the sunshine in my life, and I cherish every moment we've spent together. Your smile brightens up my darkest days, and I can't bear the thought of hurting you.</p>
+        <p>In the coming days, I'll make it my mission to bring back the happiness and trust that I've taken away from us. I'll plan memorable dates, write you heartfelt letters, and remind you every day of how special you are.</p>
+        <p>Please forgive me, my love, and allow me the chance to prove my commitment to you.</p>
+        <p class="heartbeat">With all my love and endless apologies,</p>
+        <p>Mark Andrei A. Condino</p>
+        <!-- Unique feature: Love Letter -->
+        <div class="show-love-letter">
+            <button onclick="showLoveLetter()">Reveal a Love Letter</button>
+            <div class="love-letter">
+                <p>My Dearest LOVITOTS,</p>
+                <p>I want you to know how deeply I care about you. My love for you is immeasurable, and I can't imagine my life without you by my side.</p>
+                <p>With every moment we share, my love for you grows stronger. I promise to make every day as special as the love I have for you. Please forgive me, and let's build a brighter future together.</p>
+                <p class="heartbeat">Yours forever,</p>
+                <p>Mark Andrei A. Condino</p>
+            </div>
+        </div>
+        <button onclick="impressHer()">Impress Me</button>
+    </div>
+    <script>
+        function showLoveLetter() {
+            const loveLetter = document.querySelector('.love-letter');
+            const showLoveLetterBtn = document.querySelector('.show-love-letter button');
+            loveLetter.style.display = 'block';
+            showLoveLetterBtn.style.display = 'none';
+        }
+
+        function impressHer() {
+            alert("I promise to be the best partner ever and shower you with love and care.");
+        }
+    </script>
+</body>
+</html>
